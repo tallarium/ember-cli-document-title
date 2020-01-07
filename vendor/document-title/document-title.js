@@ -1,6 +1,6 @@
 var get = Ember.get;
 var getOwner = Ember.getOwner;
-var Promise = Ember.RSVP.Promise;
+var Promise = window.Promise || Ember.RSVP.Promise;
 
 var routeProps = {
   // `titleToken` can either be a static string or a function
